@@ -1,0 +1,23 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartArguments>-s smtp.live.com -port 587 -u myusername@hotmail.com -protocol ssl -p mypassword -f myusername@hotmail.com -t recipient@hostname.com -subject "subject line" -body "Hi" -logfile dd.log</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <StartArguments>-s smtp.gmail.com -u selcuk@vegayazilim.com.tr -p vegaserver1090 -t selcuk@atay.org -protocol ssl -subject deneme -body "merhaba dunya" -f "Suna Koçak &lt;suna@kocak.com&gt;"</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PublishUrlHistory>publish\</PublishUrlHistory>
+    <InstallUrlHistory>
+    </InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>
+    </BootstrapperUrlHistory>
+    <ErrorReportUrlHistory>
+    </ErrorReportUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+</Project>
